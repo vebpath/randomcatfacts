@@ -1,0 +1,81 @@
+@import url("//fonts.googleapis.com/css?family=Google+Sans:400,500,600,700");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Google Sans", Helvetica, Arial, sans-serif;
+}
+:root{
+  --primaryClr:#FF6C22; 
+}
+body {
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--primaryClr);
+  transition: 0.3s;
+}
+
+main{
+  width: 90%;
+  height: 250px;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 30px 10px rgba(0,0,0,0.21);
+}
+header{
+  padding: 15px;
+  text-align: center;
+}
+
+.facts{
+  padding: 15px;
+  overflow: auto;
+}
+
+footer{
+  padding: 10px;
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tools{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+i{
+  padding: 10px;
+  border-radius: 50px;
+  background-color: lightgray;
+  font-size: 20px !important;
+  cursor: pointer;
+}
+
+button{
+  padding: 10px;
+  width: 150px;
+  border: none;
+  background-color: var(--primaryClr);
+  border-radius: 25px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+i:hover{
+  color: white;
+  background-color: var(--primaryClr);
+}
